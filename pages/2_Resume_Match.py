@@ -1,5 +1,5 @@
 import streamlit as st
-from utils.jd_matcher import analyze_resume_match
+from utils.jd_matcher import analyze_resume_match_ai
 
 st.title("📄 Resume Match")
 
@@ -15,8 +15,19 @@ if jd_file:
         for page in reader.pages:
             jd_text += page.extract_text() or ""
     if jd_text:
-        match_score, highlights = analyze_resume_match(jd_text)
-        st.metric("Match Score", f"{match_score}%")
-        st.write("### Highlights", highlights)
+        with st.spinner("Analyzing with AI..."):
+            match_score, matched_skills = analyze_resume_match_ai(jd_text)
+        st.subheader("Match Score")
+        st.progress(match_score / 100)
+        st.write(f"**{match_score}%**")
+        st.subheader("Matched Skills / Keywords")
+        if matched_skills:
+            for kw in matched_skills:
+                st.success(kw)
+        else:
+            st.info("No keywords matched.")
+        st.divider()
+        st.subheader("Job Description Preview")
+        st.code(jd_text[:1500] + ("..." if len(jd_text) > 1500 else ""), language="markdown")
     else:
         st.warning("Could not extract text from the uploaded file.")
