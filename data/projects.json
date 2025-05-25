@@ -1,0 +1,17 @@
+[
+    {
+        "title": "AI-Powered Document Summarization Tool",
+        "tech": "Python | NLP | Transformers | Flask | AWS | REST API",
+        "summary": "Developed a web app using NLP and transformer models to summarize documents. Integrated RESTful APIs and deployed on AWS."
+    },
+    {
+        "title": "E-Commerce Analytics Dashboard",
+        "tech": "React | D3.js | Node.js | Express | PostgreSQL",
+        "summary": "Built an interactive dashboard for real-time sales and customer analytics, visualizing KPIs and optimizing SQL queries."
+    },
+    {
+        "title": "Automated Testing Framework",
+        "tech": "Python | Pytest | Selenium | Jenkins | Docker",
+        "summary": "Designed a CI/CD-integrated automated testing framework for SaaS, supporting unit and end-to-end tests."
+    }
+]
