@@ -16,6 +16,13 @@ try:
 except (FileNotFoundError, json.JSONDecodeError):
     projects = []
 
+# Load existing skills
+try:
+    with open("data/skills.json", "r") as f:
+        skills = json.load(f)
+except (FileNotFoundError, json.JSONDecodeError):
+    skills = []
+
 # Display existing projects with edit option
 st.subheader("Existing Projects")
 for idx, proj in enumerate(projects):
@@ -40,3 +47,29 @@ if st.button("Add Project"):
     with open("data/projects.json", "w") as f:
         json.dump(projects, f, indent=4)
     st.success("Project added!")
+
+# --- Skills Admin Section ---
+st.subheader("Manage Skills")
+
+# Display and remove skills
+for idx, skill in enumerate(skills):
+    cols = st.columns([6, 1])
+    cols[0].write(skill)
+    if cols[1].button("❌", key=f"remove_skill_{idx}"):
+        skills.pop(idx)
+        with open("data/skills.json", "w") as f:
+            json.dump(skills, f, indent=4)
+        st.success(f"Removed skill: {skill}")
+        st.experimental_rerun()
+
+# Add new skill
+new_skill = st.text_input("Add New Skill")
+if st.button("Add Skill"):
+    if new_skill and new_skill not in skills:
+        skills.append(new_skill)
+        with open("data/skills.json", "w") as f:
+            json.dump(skills, f, indent=4)
+        st.success(f"Added skill: {new_skill}")
+        st.experimental_rerun()
+    elif new_skill in skills:
+        st.warning("Skill already exists.")
