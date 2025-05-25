@@ -1,7 +1,13 @@
 import streamlit as st
 import json
+import os
 
 st.title("🔐 Admin Panel")
+
+# Disable screen based on environment variable
+if os.getenv("ADMIN_DISABLED", "false").lower() == "true":
+    st.warning("Admin panel is disabled.")
+    st.stop()
 
 # Load existing projects
 try:
