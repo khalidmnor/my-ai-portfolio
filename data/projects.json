@@ -1,17 +1,102 @@
 [
     {
-        "title": "AI-Powered Document Summarization Tool",
-        "tech": "Python | NLP | Transformers | Flask | AWS | REST API",
-        "summary": "Developed a web app using NLP and transformer models to summarize documents. Integrated RESTful APIs and deployed on AWS."
+        "title": "STARWORKS (2013)",
+        "tech": "Java, GWT, GXT, SQL Server 2008 R2, SSIS, CodeSmith Generator, jQuery",
+        "summary": "Developed a platform for statutory reporting in XBRL/Excel format, enabling financial balancing, adjustment, and enrichment. Involved data loading using SSIS and custom front-end frameworks with GXT and GWT."
     },
     {
-        "title": "E-Commerce Analytics Dashboard",
-        "tech": "React | D3.js | Node.js | Express | PostgreSQL",
-        "summary": "Built an interactive dashboard for real-time sales and customer analytics, visualizing KPIs and optimizing SQL queries."
+        "title": "SWIFT Migration (2014)",
+        "tech": "Java, Redmine, jQuery",
+        "summary": "Led migration of MT transactions to MX following ISO20022 standards for Central Bank of Malaysia and financial institutions. Focused on requirement gathering, system design, and implementation."
     },
     {
-        "title": "Automated Testing Framework",
-        "tech": "Python | Pytest | Selenium | Jenkins | Docker",
-        "summary": "Designed a CI/CD-integrated automated testing framework for SaaS, supporting unit and end-to-end tests."
+        "title": "RENTAS Test Automation (2014)",
+        "tech": "Robot Framework, Jenkins, Selenium2Library, Java, Maven, Subversion, Sonatype Nexus, NSDEE 3.0, C, C++, COBOL, pTAL, jQuery",
+        "summary": "Automated build and testing processes across multiple projects. Migrated Java projects to Maven and integrated testing frameworks for improved productivity."
+    },
+    {
+        "title": "HSBC - TEXIS (2013)",
+        "tech": "Java, GWT, GWT-Ext, Oracle 10g, C++, IBM AIX",
+        "summary": "Web-based application for capturing and tracking service orders for high-speed broadband. Involved in UI development, backend processing, and system integration."
+    },
+    {
+        "title": "iDelivery (2013)",
+        "tech": "Java, Oracle 10g, GWT, GWT-Ext, WebSphere, LDAP, Simple SSO, IBM AIX",
+        "summary": "Developed a web-based system for capturing and monitoring service orders in Telekom Malaysia's wholesale and payphone departments."
+    },
+    {
+        "title": "OOR (Online Order Request) (2013)",
+        "tech": "Java, Oracle 10g, GWT, GWT-Ext, WebSphere, LDAP, Simple SSO, IBM AIX",
+        "summary": "Created a web-based system to capture service orders for telephony and broadband nationwide via intranet, focusing on UI and backend development."
+    },
+    {
+        "title": "STORMS (Streamyx & Telephony Order Monitoring System) (2012)",
+        "tech": "Java, Oracle 10g, GWT, GWT-Ext, WebSphere, LDAP, Simple SSO, IBM AIX",
+        "summary": "Built a data collection system for monitoring service orders, reducing DB storage costs by storing only key columns and accessing detailed data via external channels."
+    },
+    {
+        "title": "SDPTS Enhancement (2011)",
+        "tech": "Java, Oracle 10g, GWT, GWT-Ext, WebSphere, IBM AIX",
+        "summary": "Enhanced the SDPTS system to include data migration from two new systems and new UI functions for project tracking and reporting."
+    },
+    {
+        "title": "SDPTS - Service Delivery Project Tracking System (2007)",
+        "tech": "Java, Oracle 10g, GWT, GWT-Ext, WebSphere, IBM AIX",
+        "summary": "Developed a project delivery tracking and reporting system integrating data from external systems and a data warehouse, with DB design and UI/backend implementation."
+    },
+    {
+        "title": "eTRAS Enhancement (2008)",
+        "tech": "Java, JSP, MySQL, Tomcat, HP Blade",
+        "summary": "Improved business logic and added new UI functions for the eTRAS system, which automates engineering trouble report task assignment via SMS."
+    },
+    {
+        "title": "eTRAS (2006)",
+        "tech": "Java, JSP, MySQL, Tomcat, HP Blade, Red Hat",
+        "summary": "Designed and developed a network inventory system with SMS-based task assignment and automated reporting for Telekom Malaysia."
+    },
+    {
+        "title": "TeMIP-RASS (2008)",
+        "tech": "PHP, MySQL, Apache",
+        "summary": "Developed UI components for a service automation system, enabling customization of exchange commands for telephony and payphone products."
+    },
+    {
+        "title": "CASS-OCA (2008)",
+        "tech": "Java, Oracle 10g",
+        "summary": "Translated unstructured text data into structured formats for backend processing, supporting data integration and system enhancements."
+    },
+    {
+        "title": "ASAS 2 (2007)",
+        "tech": "Java, Oracle 10g, GWT, WebSphere, Sun OS",
+        "summary": "Automated service activation/deactivation processes by converting manual exchange commands into sequenced scripts, with monitoring and reporting features."
+    },
+    {
+        "title": "Duty Roster (2007)",
+        "tech": "PHP, MySQL, Apache",
+        "summary": "Developed a UI system for managing duty rosters, focusing on schedule tracking and administrative functionalities."
+    },
+    {
+        "title": "SIPIKAT 2 WEB (2006)",
+        "tech": "PHP, Oracle 10g, Apache, Red Hat",
+        "summary": "Created a trouble ticket assignment system using SMS as a medium for field engineers to update task statuses."
+    },
+    {
+        "title": "IIS (Intruder Information System) (2010)",
+        "tech": "PHP, Red Hat, MySQL, Snort",
+        "summary": "Developed a Linux-based router OS for intrusion detection, integrating Snort and designing a web interface for monitoring."
+    },
+    {
+        "title": "SDPTS Enhancement (2011)",
+        "tech": "Java, Oracle 10g, GWT, GWT-Ext, WebSphere, IBM AIX",
+        "summary": "Enhanced SDPTS to support data migration and new UI features for tracking and reporting project deliveries."
+    },
+    {
+        "title": "eTRAS Enhancement (2008)",
+        "tech": "Java, JSP, MySQL, Tomcat, HP Blade",
+        "summary": "Implemented changes to business logic and added UI functions for automated task assignment and reporting in the eTRAS system."
+    },
+    {
+        "title": "eTRAS (2006)",
+        "tech": "Java, JSP, MySQL, Tomcat, HP Blade, Red Hat",
+        "summary": "Developed a network inventory system with SMS-based task assignment and automated reporting for Telekom Malaysia."
     }
 ]
